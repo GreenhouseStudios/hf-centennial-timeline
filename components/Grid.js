@@ -1,12 +1,15 @@
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
+import 'gridstack/dist/gridstack.min.css';
+import React, { useEffect, useRef } from "react";
+import GridstackComponent from "./GridstackTile";
 
 const Grid = ({ blok }) => {
+
   return (
-    <div className="grid grid-cols-3" {...storyblokEditable(blok)}>
-      {blok.columns.map((nestedBlok) => (
-        <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
-      ))}
-    </div>
+    // <div ref={gridRef} className="grid grid-cols-3 grid-stack" {...storyblokEditable(blok)}>
+   
+    // </div>
+    <GridstackComponent />
   );
 };
 

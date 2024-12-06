@@ -303,6 +303,11 @@ glob-parent@^6.0.2:
   dependencies:
     is-glob "^4.0.3"
 
+gridstack@^11.1.1:
+  version "11.1.1"
+  resolved "https://registry.yarnpkg.com/gridstack/-/gridstack-11.1.1.tgz#50f6c7a46f703a5c92a9819a607b22a6e8bd9703"
+  integrity sha512-St50Ra3FlxxERrMcnRAmxQKE8paXOIwQ88zpafUkzdOYg9Sn/3/Vf4EqCWv8P/hkNIlfW/8VYsk8fk+3DQPVxQ==
+
 has@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/has/-/has-1.0.3.tgz#722d7cbfc1f6aa8241f16dd814e011e1f41e8796"
