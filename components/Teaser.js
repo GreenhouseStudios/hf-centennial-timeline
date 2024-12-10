@@ -1,7 +1,7 @@
 import { storyblokEditable } from "@storyblok/react";
 
 const Teaser = ({ blok }) => {
-  return <h2 className="text-2xl mb-10" {...storyblokEditable(blok)}>{blok.headline}</h2>;
+  return <div className="py-4 mx-10 mb-10 border-2 border-transparent border-b-black"><h2 className="flex justify-start px-5 mb-0 mb-10 text-3xl font-bold" {...storyblokEditable(blok)}>{blok.headline}</h2></div>
 };
 
 export default Teaser;

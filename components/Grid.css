@@ -1,0 +1,80 @@
+.masonry-grid {
+    display: flex;
+    margin-left: -16px; /* Adjust as needed */
+    width: auto;
+    flex-wrap: wrap;
+    cursor: pointer;
+  }
+  
+  .masonry-grid-column {
+    padding-left: 16px; /* Adjust as needed */
+    background-clip: padding-box;
+  }
+  
+  .grid-item {
+    background: #f4f4f4;
+    margin-bottom: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+
+  .modal {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    height: 100vh;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    
+  }
+  
+  .modal-content {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .modal-content h1 {
+    margin-top: 0;
+    font-size: 1.5em;
+  }
+  
+  .modal-content p {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .modal-close:hover,
+  .modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
