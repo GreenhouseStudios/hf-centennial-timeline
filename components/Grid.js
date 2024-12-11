@@ -77,7 +77,9 @@ const Grid = ({ blok }) => {
                 nisi. Maecenas euismod, nisl eu ultricies ultrices, nunc nisi
               </p>
               <img src={modalBlok.img} alt="img" className="w-full" />
-              {RichText(modalBlok.content[0].body)}
+              {modalBlok.content.map((content, index) => (
+                RichText(content.body)
+              ))}
             </div>
           </div>
         </div>
