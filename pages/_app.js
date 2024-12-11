@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import "../components/Grid.css";
 import { storyblokInit, apiPlugin } from "@storyblok/react";
 import Feature from "../components/Feature";
 import Grid from "../components/Grid";

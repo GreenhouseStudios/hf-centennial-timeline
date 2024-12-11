@@ -1,6 +1,5 @@
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
 import React from "react";
-import "./Grid.css";
 import { useState } from "react";
 import { render } from "storyblok-rich-text-react-renderer";
 
@@ -22,10 +21,8 @@ const Grid = ({ blok }) => {
     setModalBlokUid(null);
   }
 
-  function RichText( document ) {
-    // document is the rich text object you receive from Storyblok,
-    // in the form { type: "doc", content: [ ... ] }
-    return <div>{render(document)}</div>;
+  function RichText( document, index ) {
+    return <div key={index}>{render(document)}</div>;
   }
 
   return (
@@ -77,7 +74,7 @@ const Grid = ({ blok }) => {
               </p>
               <img src={modalBlok.img} alt="img" className="w-full" />
               {modalBlok.content?.map((content, index) => (
-                RichText(content.body)
+                RichText(content.body,index)
               ))}
             </div>
           </div>

@@ -1,5 +1,5 @@
 import { storyblokEditable } from "@storyblok/react";
-import './Grid.css'
+
 const Feature = ({ blok, onClick }) => {
   // function showModal() {
   //   console.log("modal");
