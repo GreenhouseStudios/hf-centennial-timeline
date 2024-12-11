@@ -33,10 +33,6 @@
   }
 
   .modal {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     height: 100vh;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -46,16 +42,6 @@
   
   .modal-content {
     width: 100%;
-  }
-  
-  .modal-content h1 {
-    margin-top: 0;
-    font-size: 1.5em;
-  }
-  
-  .modal-content p {
-    margin-bottom: 1em;
-    font-size: 1.1em;
   }
   
   .modal-close {

@@ -48,22 +48,21 @@ const Grid = ({ blok }) => {
         <div className="modal-overlay" onClick={closeModal}>
           <div className="flex flex-col items-center justify-start gap-4 overflow-scroll modal">
             <div
-              className="flex flex-col justify-center gap-5 px-24 pt-32 text-left pb-96 modal-content"
+              className="flex flex-col justify-center gap-5 px-24 text-left py-80 modal-content"
               style={{
                 backgroundImage: `url(${modalBlok.img})`,
                 backgroundPosition: "center",
               }}
             >
-              <h1 className="text-2xl font-bold text-white ">
+              <h1 className="text-5xl font-bold text-white ">
                 {modalBlok.name}
               </h1>
-              <p className="text-2xl font-bold text-white ">
+              <p className="text-2xl font-bold text-white">
                 {modalBlok.description}
               </p>
             </div>
             <div
-              style={{ height: "3000px" }}
-              className="flex flex-col justify-center gap-5 px-24 pt-32 text-center pb-96 modal-content"
+              className="flex flex-col justify-center gap-5 px-24 pt-32 text-left pb-96 modal-content"
             >
               <h1 className="text-2xl font-bold text-black">
                 Title of the Event
