@@ -1,62 +1,69 @@
 .masonry-grid {
-    display: flex;
-    margin-left: -16px; /* Adjust as needed */
-    width: auto;
-    flex-wrap: wrap;
-    cursor: pointer;
-  }
-  
-  .masonry-grid-column {
-    padding-left: 16px; /* Adjust as needed */
-    background-clip: padding-box;
-  }
-  
-  .grid-item {
-    background: #f4f4f4;
-    margin-bottom: 16px;
-    padding: 16px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-  }
+  display: flex;
+  margin-left: -16px; /* Adjust as needed */
+  width: auto;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
 
-  .modal {
-    height: 100vh;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 80vw;
-    
-  }
-  
-  .modal-content {
-    width: 100%;
-  }
-  
-  .modal-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  .modal-close:hover,
-  .modal-close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
+.masonry-grid-column {
+  padding-left: 16px; /* Adjust as needed */
+  background-clip: padding-box;
+}
+
+.grid-item {
+  background: #f4f4f4;
+  margin-bottom: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Number of lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal {
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80vw;
+}
+
+.modal-content {
+  width: 100%;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

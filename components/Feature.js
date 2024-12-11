@@ -1,5 +1,5 @@
 import { storyblokEditable } from "@storyblok/react";
-
+import './Grid.css'
 const Feature = ({ blok, onClick }) => {
   // function showModal() {
   //   console.log("modal");
@@ -15,10 +15,10 @@ const Feature = ({ blok, onClick }) => {
         backgroundPosition: "center",
       }}
     >
-      <div className="flex flex-col gap-2 p-4 overflow-hidden text-left bg-white whitespace-nowrap hover:bg-gray-200 h-1/2">
+      <div className="flex flex-col gap-2 p-4 overflow-hidden text-left bg-white hover:bg-gray-200 h-1/2">
         <p className="text-2xl font-bold">{blok.name}</p>
         <p className="text-base">{blok.date}</p>
-        <p className="overflow-hidden text-base text-ellipsis">
+        <p className="line-clamp-3">
           {blok.description}
         </p>
       </div>
